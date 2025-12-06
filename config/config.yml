@@ -1,0 +1,12 @@
+telegram_bot:
+  token: {{ secret_token }}
+  chats:
+    - id: 888
+      origin_id: 333
+    - id: 444
+  update_timeout: 30s
+comment_generator:
+  url: http://comment-generator:8080/api/generate
+  username: {{ basic_auth_username }}
+  password: {{ basic_auth_password }}
+use_debug_mode: false
